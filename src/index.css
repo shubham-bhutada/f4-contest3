@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+body {
+  background-color: #242020;
+}
+.navbar {
+  background-color: #292828;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.2% 2%;
+}
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 20vw;
+}
+.nav-left img {
+  width: 30%;
+}
+.logo-keazon {
+  color: #fff;
+  /* font-size: 35px; */
+  font-size: 2.2vw;
+  font-weight: 400;
+}
+.logo-BOOKS {
+  color: #fff;
+  /* font-size: 20px; */
+  font-size: 1.5vw;
+  font-weight: 100;
+}
+.nav-search {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-search input {
+  width: 80%;
+  background-color: #373737;
+  border: none;
+  padding: 1vw 10px;
+  color: #808080;
+  /* font-size: 17px; */
+  font-size: 1.3vw;
+  font-weight: 300;
+}
+.nav-search button {
+  width: 15%;
+  padding: 1vw;
+  color: rgba(255, 255, 255, 0.5);
+  /* font-size: 17px; */
+  font-size: 1.3vw;
+  font-weight: 300;
+  background-color: #292828;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.nav-right ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vw;
+}
+.nav-right ul li {
+  list-style: none;
+}
+.nav-right ul li img {
+  width: 3.2vw;
+}
+
+.cards {
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.bookCard {
+  /* border: 1px solid red; */
+  display: flex;
+  padding: 1vw;
+  width: 400px;
+  height: 280px;
+  overflow: hidden;
+  gap: 10px;
+  background-color: #373737;
+  min-width: 320px;
+  box-sizing: border-box;
+}
+.cards div:nth-child(1) {
+  background-color: #415f71;
+  border-radius: 15px;
+}
+.cards div:nth-child(2) {
+  /* background-color: #573F71; */
+  border-radius: 15px;
+}
+.cards div:nth-child(3) {
+  background-color: #733f54;
+  border-radius: 15px;
+}
+.bookCard img {
+  height: 100%;
+  width: 50%;
+}
+.bookInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+.bookInfo h3 {
+  color: #fff;
+  font-size: 25px;
+  font-weight: 700;
+}
+.bookInfo p {
+  color: #d2d2d2;
+  font-size: 12px;
+  font-weight: 400;
+  height: 58%;
+  overflow: hidden;
+}
+.bookInfo a button {
+  align-self: center;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 300;
+  padding: 1% 5%;
+  cursor: pointer;
+}
+
+
+
+h2 {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 700;
+  margin: 10px 20px;
+}
+.morebooks {
+  width: 100vw;
+  padding: 1vw;
+  box-sizing: border-box;
+  overflow-y: hidden;
+}
+.thumbnails {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 15px;
+  padding: 1vw;
+  box-sizing: border-box;
+}
+.bookthumb {
+  width: 280px;
+  height: 300px;
+  /* gap: 20px; */
+  margin: auto;
+  margin-bottom: 20px;
+}
+.bookthumb img {
+  width: 80%;
+  height: 100%;
+  cursor: pointer;
+  /* align-self: center; */
+}
+
+
+/* Add this to your CSS */
+
+.bookCard {
+  padding: 10px;
+  margin: 10px;
+  transition: width 0.3s; /* Add a transition for smooth width change */
+}
+
+.bookCard.expanded {
+  width: 100%;
+}
+
+.bookCard img {
+  max-width: 100%;
+}
+
+.bookInfo {
+  margin-top: 10px;
+}
+
+/* Additional styles for the two buttons */
+.bookInfo a button {
+  margin-right: 5px;
+}
+
+.btn {
+  background-color: transparent;
+}
+.btn a {
+  background-color: transparent;
+}
+.btn a button {
+  background-color: transparent;
+}
